@@ -2,24 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website - About</title>
+    <title>My Website - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        body { font-family: Arial, Helvetica, sans-serif; background-color: #f4f6f8; margin:0; padding:0; color:#333; }
-        header { background-color:#222; color:white; padding:20px; }
-        header h1 { margin:0; }
-        nav { margin-top:10px; }
-        nav a { color:white; margin-right:15px; text-decoration:none; font-weight:bold; }
-        nav a:hover { text-decoration:underline; }
-        main { max-width:900px; margin:30px auto; background:white; padding:20px; border-radius:8px; }
-        h2 { color:#222; border-bottom:2px solid #eee; padding-bottom:5px; }
-        p { line-height:1.6; color:#555; }
-        footer { text-align:center; padding:15px; background:#eee; color:#666; font-size:14px; margin-top:20px; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== HERO IMAGE SECTION ===== */
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: 400px;
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+        }
+
+        .hero a {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .hero a:hover {
+            background-color: #e55b00;
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        main {
+            max-width: 900px;
+            margin: -80px auto 30px auto; /* pull up slightly over hero */
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #222;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #eee;
+            color: #666;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>My Website</h1>
         <nav>
@@ -30,14 +133,34 @@
         </nav>
     </header>
 
+    <!-- HERO IMAGE -->
+    <div class="hero">
+        <h2>Welcome to My Website</h2>
+        <p>Beautiful design and simple static pages</p>
+        <a href="about.html">Learn More</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
     <main>
-        <h2>About</h2>
-        <p>
-            Hello! This website is a beginner-friendly static site.
-            It is fast, simple, and does not require any backend or database.
-        </p>
+        <section>
+            <h2>About This Site</h2>
+            <p>
+                This website is beginner-friendly and fully static. You can explore the pages
+                to learn more about HTML, CSS, and basic web design techniques.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Website Design</li>
+                <li>Static Web Development</li>
+                <li>Learning & Experimentation</li>
+            </ul>
+        </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         © 2026 My Website. All rights reserved.
     </footer>
