@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Simple Website</title>
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
@@ -10,25 +11,64 @@
             background-color: #f4f6f8;
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
+        /* ===== HEADER ===== */
         header {
             background-color: #222;
             color: white;
             padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: #0066cc;
+            color: white;
+            padding: 50px 20px;
             text-align: center;
         }
 
+        .hero h2 {
+            margin-bottom: 10px;
+        }
+
+        /* ===== MAIN CONTENT ===== */
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
             background: white;
             padding: 20px;
             border-radius: 8px;
         }
 
-        h1, h2 {
-            color: #333;
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #222;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
         }
 
         p {
@@ -40,15 +80,14 @@
             padding-left: 20px;
         }
 
-        a {
-            color: #0066cc;
-            text-decoration: none;
+        /* ===== CONTACT ===== */
+        .contact-box {
+            background: #f0f2f5;
+            padding: 15px;
+            border-radius: 6px;
         }
 
-        a:hover {
-            text-decoration: underline;
-        }
-
+        /* ===== FOOTER ===== */
         footer {
             text-align: center;
             padding: 15px;
@@ -60,30 +99,60 @@
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>A simple static HTML + CSS page</p>
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h2>Welcome to My Website</h2>
+        <p>A simple static website built with HTML and CSS</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
     <main>
-        <h2>About Me</h2>
-        <p>
-            Hello! I am learning web development.
-            This is a simple static website using only HTML and CSS.
-        </p>
 
-        <h2>My Links</h2>
-        <ul>
-            <li><a href="https://www.google.com">Google</a></li>
-            <li><a href="https://www.github.com">GitHub</a></li>
-        </ul>
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Hello! This website is a beginner-friendly static site.
+                It is fast, simple, and does not require any backend or database.
+            </p>
+        </section>
 
-        <h2>Contact</h2>
-        <p>Email: example@email.com</p>
+        <!-- SERVICES -->
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Website Design</li>
+                <li>Static Website Development</li>
+                <li>Basic HTML & CSS Projects</li>
+                <li>Learning & Experimentation</li>
+            </ul>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-box">
+                <p><strong>Email:</strong> example@email.com</p>
+                <p><strong>GitHub:</strong> https://github.com/username</p>
+            </div>
+        </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        © 2026 My Simple Website
+        © 2026 My Website. All rights reserved.
     </footer>
 
 </body>
